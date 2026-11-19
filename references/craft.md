@@ -98,7 +98,8 @@ Three passes, in this order:
    a grade that drifts, a repeated composition, a set that is all people or all objects.
 3. **Full-size pass:** Read each survivor at full size. Then zoom on every region where the
    generator usually fails, at native pixels:
-   `python -I <skill-dir>/scripts/finish.py zoom <img> <out.png> --box x0,y0,x1,y1`.
+   `python -I <skill-dir>/scripts/finish.py zoom <img> <out.png> --box x0,y0,x1,y1`
+   (fractions of width and height, 0-1, not pixels; pixel values crash with a DecompressionBombError).
    - Zoom on every hand and every face.
    - Zoom on anywhere that lettering could appear: signs, screens, packaging, paper, clothing.
    - Zoom on the busiest corner of the background.
