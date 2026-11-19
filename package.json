@@ -4,7 +4,7 @@
   "description": "Claude Code skill: a website link in, a finished set of marketing images out.",
   "type": "module",
   "scripts": {
-    "check": "node scripts/harvest.mjs --self-test && python -I scripts/finish.py --self-test && python -I scripts/qa.py --self-test && python -I scripts/codex_image.py --check"
+    "check": "node scripts/harvest.mjs --self-test && node scripts/autosync.mjs --self-test && python -I scripts/finish.py --self-test && python -I scripts/qa.py --self-test && python -I scripts/codex_image.py --check"
   },
   "dependencies": {
     "playwright": "1.59.1"
