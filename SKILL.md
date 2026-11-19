@@ -133,7 +133,8 @@ Run craft.md section 4 on every candidate:
 
 Retry rejects as the gate says: rewrite once, try a new concept once, then fall back to the
 next-best harvested photo. After finishing, run `qa.py` once more on `final/` at each delivery
-size, and look at the final contact sheet as one set.
+size (it takes file paths, not a folder: `qa.py "$W"/final/0[1-5]-*.jpg --size 1080x1350`), and
+look at the final contact sheet as one set.
 
 ## 6. Finish and deliver
 
