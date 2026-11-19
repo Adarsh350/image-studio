@@ -1,0 +1,941 @@
+[
+ {
+  "file": "exterior-place-classic-car-meadow.jpg",
+  "look": "exterior-place",
+  "industries": [
+   "retail-auto#Car dealership",
+   "professional-b2b#Travel, tours and experiences"
+  ],
+  "why": "Old car's flank in a wildflower field, low golden sun, real paint wear.",
+  "size": "960x639",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/car-automotive-Y0YKYAY0VN",
+  "creator": "Alan Cruk"
+ },
+ {
+  "file": "exterior-place-hay-field-horses.jpg",
+  "look": "exterior-place",
+  "industries": [
+   "food-hospitality#Grocery, deli, specialty food and farm shop",
+   "home-trades#Landscaping and garden design"
+  ],
+  "why": "Wide working landscape with flat overcast light and true greens.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/green-grass-WO8ZW803ZS",
+  "creator": "Vladimir Kudinov"
+ },
+ {
+  "file": "exterior-place-ivy-cottage-door.jpg",
+  "look": "exterior-place",
+  "industries": [
+   "home-trades#Residential and luxury real estate",
+   "home-trades#Landscaping and garden design",
+   "retail-auto#Florist"
+  ],
+  "why": "Character frontage with planters; flat soft light, no HDR.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/house-home-M040EU7YWJ",
+  "creator": "Eduard Militaru"
+ },
+ {
+  "file": "exterior-place-solar-roof-red-house.jpg",
+  "look": "exterior-place",
+  "industries": [
+   "home-trades#Solar and home energy"
+  ],
+  "why": "Panels on a real home at dusk; the house, not the tech, is the subject.",
+  "size": "683x1024",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/wooden-house-with-solar-panels-at-sunset-33757669/",
+  "creator": "molnartamasphotography"
+ },
+ {
+  "file": "exterior-place-townhouse-front-door.jpg",
+  "look": "exterior-place",
+  "industries": [
+   "home-trades#Residential and luxury real estate"
+  ],
+  "why": "Straight-on facade, verticals true, window boxes for life.",
+  "size": "960x629",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/house-home-6ORKJ6YBK1",
+  "creator": "Jamie Street"
+ },
+ {
+  "file": "food-table-brunch-overhead-hands.jpg",
+  "look": "food-table",
+  "industries": [
+   "food-hospitality#Cafe and coffee shop",
+   "food-hospitality#Fine-dining and casual restaurants"
+  ],
+  "why": "Overhead brunch spread with several hands reaching in.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/breakfast-food-OC8WX0E0X3",
+  "creator": "Ali Inay"
+ },
+ {
+  "file": "food-table-cafe-two-coffees.jpg",
+  "look": "food-table",
+  "industries": [
+   "food-hospitality#Cafe and coffee shop"
+  ],
+  "why": "Top-down on a scuffed table with a hand and phone in frame: lived-in, not styled.",
+  "size": "960x720",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/cafe-coffee-9QXZ4Q9PXX",
+  "creator": "Chiara Pinna"
+ },
+ {
+  "file": "food-table-chopping-board-veg.jpg",
+  "look": "food-table",
+  "industries": [
+   "food-hospitality#Fine-dining and casual restaurants",
+   "food-hospitality#Grocery, deli, specialty food and farm shop"
+  ],
+  "why": "Prep in progress, scattered peppercorns, low angle: a kitchen, not a studio.",
+  "size": "960x637",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/food-cuttingboard-A535FDBB21",
+  "creator": "Webvilla"
+ },
+ {
+  "file": "food-table-market-crates-overhead.jpg",
+  "look": "food-table",
+  "industries": [
+   "food-hospitality#Grocery, deli, specialty food and farm shop"
+  ],
+  "why": "Overhead crates of produce, honest colour, real handwritten tags.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/food-fruits-AWJD4WV6W1",
+  "creator": "Lukas Budimaier"
+ },
+ {
+  "file": "food-table-radishes-colander-moody.jpg",
+  "look": "food-table",
+  "industries": [
+   "food-hospitality#Grocery, deli, specialty food and farm shop",
+   "food-hospitality#Fine-dining and casual restaurants"
+  ],
+  "why": "Dark still-life produce: one window light, earthy grade.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/garden-vegetables-TUDWP5HZRN",
+  "creator": "Foodie Girl"
+ },
+ {
+  "file": "food-table-restaurant-service.jpg",
+  "look": "food-table",
+  "industries": [
+   "food-hospitality#Fine-dining and casual restaurants",
+   "food-hospitality#Event and wedding venue and catering"
+  ],
+  "why": "Plate landing mid-service with diners' hands and glassware: real dinner energy.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/restaurant-food-47E77904CB",
+  "creator": "Jay Wennington"
+ },
+ {
+  "file": "hands-craft-architect-plans-laptop.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Interior design and architecture studio",
+   "professional-b2b#Consulting and B2B services"
+  ],
+  "why": "Working hands over real drawings: the work, not a stock handshake.",
+  "size": "960x720",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/office-work-42H3JH8QI5",
+  "creator": "energepic.com"
+ },
+ {
+  "file": "hands-craft-barber-razor-beard.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "beauty-fitness#Barbershop"
+  ],
+  "why": "Straight razor on a beard line, real skin and hair texture, warm low-key grade.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/barber-razor-06HGN8LMUX",
+  "creator": "Nick Demou"
+ },
+ {
+  "file": "hands-craft-boiler-service.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Home services (HVAC, plumbing, electrical)"
+  ],
+  "why": "Gloved hands on a real boiler pump: service work shown honestly.",
+  "size": "1024x683",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/plumber-repairing-power-source-7859953/",
+  "creator": "Heiko Ruth"
+ },
+ {
+  "file": "hands-craft-carpenter-plane-frame.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Construction, renovation and builders"
+  ],
+  "why": "Plane shaving a window frame, curls of wood, daylight on skin.",
+  "size": "1024x684",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/crop-carpenter-working-with-window-frame-using-plane-5691541/",
+  "creator": "kseniachernaya"
+ },
+ {
+  "file": "hands-craft-child-desk-overhead.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "professional-b2b#Education, tutoring and schools",
+   "professional-b2b#Childcare and nursery"
+  ],
+  "why": "Overhead on a worn school desk, a child's hand mid-task, natural clutter.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/student-school-1KOT8HDPAX",
+  "creator": "Tamarcus Brown"
+ },
+ {
+  "file": "hands-craft-electrician-fuse-board.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Home services (HVAC, plumbing, electrical)"
+  ],
+  "why": "Hands in a live fuse board, colour-coded wiring, real concentration.",
+  "size": "681x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/electrician-electricity-5OFPE51CY7",
+  "creator": "Michal Jarmoluk"
+ },
+ {
+  "file": "hands-craft-fresh-pasta.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "food-hospitality#Fine-dining and casual restaurants",
+   "food-hospitality#Bakery and patisserie"
+  ],
+  "why": "Floury hands feeding pasta through a roller: craft in motion.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/pasta-flour-I4MIIMHZ5M",
+  "creator": "Jorge Zapata"
+ },
+ {
+  "file": "hands-craft-gardener-gloves-seedling.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Landscaping and garden design"
+  ],
+  "why": "Gloved hands lifting a seedling, rich soil texture, low angle.",
+  "size": "1024x683",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/gardener-hands-in-gloves-27176067/",
+  "creator": "Helena Lopes"
+ },
+ {
+  "file": "hands-craft-nail-art-brush.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "beauty-fitness#Nail, lash and brow studio"
+  ],
+  "why": "Gloved tech painting nail art at the desk, real salon clutter, no posing.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/people-hands-XX356Q6EI4",
+  "creator": "Freestocks.org"
+ },
+ {
+  "file": "hands-craft-planting-lettuce.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Landscaping and garden design",
+   "food-hospitality#Grocery, deli, specialty food and farm shop"
+  ],
+  "why": "Overhead gloved planting, even overcast light, true greens.",
+  "size": "683x1024",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/crop-person-in-gloves-working-in-garden-7728070/",
+  "creator": "Greta Hoffman"
+ },
+ {
+  "file": "hands-craft-plumber-copper-pipe-vice.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Home services (HVAC, plumbing, electrical)"
+  ],
+  "why": "Copper pipe in a vice, working hands, workshop clutter in focus falloff.",
+  "size": "683x1024",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/close-up-of-plumber-working-with-copper-pipe-39885416/",
+  "creator": "yudi-ding"
+ },
+ {
+  "file": "hands-craft-pottery-wheel-mono.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "retail-auto#Furniture and homeware store",
+   "professional-b2b#Education, tutoring and schools"
+  ],
+  "why": "Clay-covered hands centring on the wheel: texture is the subject.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/crafts-hobby-UO4VC2M9HP",
+  "creator": "Quino Al"
+ },
+ {
+  "file": "hands-craft-strawberries-cupped.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "food-hospitality#Grocery, deli, specialty food and farm shop",
+   "retail-auto#DTC and e-commerce consumer products (CPG, packaged goods)"
+  ],
+  "why": "Hands offering the product, shallow depth, saturated but believable.",
+  "size": "960x636",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/food-eat-3VLGQNBZP2",
+  "creator": "Artur Rutkowski"
+ },
+ {
+  "file": "hands-craft-tattoo-needle-close.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "beauty-fitness#Tattoo studio"
+  ],
+  "why": "Tight on the needle and fresh linework, black gloves, skin texture.",
+  "size": "1024x658",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/5920437/photo-image-background-design-public-domain",
+  "creator": null
+ },
+ {
+  "file": "hands-craft-tool-belt-detail.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Construction, renovation and builders"
+  ],
+  "why": "Tool belt and timber detail, worn workwear, face out of frame.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/construction-worker-6B70C91911",
+  "creator": "Leeroy"
+ },
+ {
+  "file": "hands-craft-wood-planer-bench.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "home-trades#Construction, renovation and builders",
+   "retail-auto#Furniture and homeware store"
+  ],
+  "why": "Bench work with sawdust and chisels: maker credibility.",
+  "size": "1024x683",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/a-person-using-a-wood-planer-7109999/",
+  "creator": "daniel-reche"
+ },
+ {
+  "file": "hands-craft-workshop-dust.jpg",
+  "look": "hands-craft",
+  "industries": [
+   "professional-b2b#Logistics, manufacturing and industrial",
+   "home-trades#Construction, renovation and builders"
+  ],
+  "why": "Weathered hands and saw dust in warm workshop light.",
+  "size": "683x1024",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/close-up-photo-of-a-person-shaking-dust-from-hands-8642038/",
+  "creator": "yuraforrat"
+ },
+ {
+  "file": "interior-daylight-brick-loft-office.jpg",
+  "look": "interior-daylight",
+  "industries": [
+   "professional-b2b#Coworking and flexible office",
+   "professional-b2b#Creative, marketing and design agency"
+  ],
+  "why": "Warehouse office, timber ceiling and brick, honest wide-angle interior.",
+  "size": "960x636",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/office-startup-FF93I0N2C1",
+  "creator": "Startup Stock Photos"
+ },
+ {
+  "file": "interior-daylight-cafe-window-seat.jpg",
+  "look": "interior-daylight",
+  "industries": [
+   "food-hospitality#Cafe and coffee shop",
+   "professional-b2b#Coworking and flexible office"
+  ],
+  "why": "Back-lit window seat, real customer from behind, street outside.",
+  "size": "960x720",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/coffee-cafe-8C35014CE3",
+  "creator": "Jeff Sheldon"
+ },
+ {
+  "file": "interior-daylight-clothes-rail.jpg",
+  "look": "interior-daylight",
+  "industries": [
+   "retail-auto#Fashion and apparel boutique"
+  ],
+  "why": "Rail of garments with a bright street blur behind, shallow and airy.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/clothes-clothing-KJ9ZK1L8WS",
+  "creator": "Artificial Photography"
+ },
+ {
+  "file": "interior-daylight-dental-surgery.jpg",
+  "look": "interior-daylight",
+  "industries": [
+   "health-care#Dental clinic and orthodontics",
+   "health-care#Aesthetics, med spa and dermatology"
+  ],
+  "why": "Clean surgery in daylight, the bar for a modern clinic interior.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/chair-dentist-3J10QN5PTS",
+  "creator": "Daniel Frank"
+ },
+ {
+  "file": "interior-daylight-lived-in-loft.jpg",
+  "look": "interior-daylight",
+  "industries": [
+   "home-trades#Residential and luxury real estate",
+   "home-trades#Interior design and architecture studio"
+  ],
+  "why": "Lived-in interior with spiral stair, warm daylight, real clutter.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/house-home-VAEZ17XZ3I",
+  "creator": "Eduard Militaru"
+ },
+ {
+  "file": "interior-daylight-restaurant-pass.jpg",
+  "look": "interior-daylight",
+  "industries": [
+   "food-hospitality#Fine-dining and casual restaurants",
+   "food-hospitality#Quick-service, food truck and delivery kitchen"
+  ],
+  "why": "Chef at the pass from behind, steel kitchen, pendant light.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/restaurant-kitchen-0HCMIT272C",
+  "creator": "Michael Browning"
+ },
+ {
+  "file": "interior-daylight-table-by-window.jpg",
+  "look": "interior-daylight",
+  "industries": [
+   "food-hospitality#Fine-dining and casual restaurants",
+   "food-hospitality#Hotel, resort and boutique stay"
+  ],
+  "why": "Half-eaten meal by a curtain window, soft daylight, nothing staged.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/food-eat-3J13XAT5LM",
+  "creator": "Brooke Lark"
+ },
+ {
+  "file": "moody-low-light-a-frame-cabin-dusk.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "food-hospitality#Hotel, resort and boutique stay",
+   "professional-b2b#Travel, tours and experiences"
+  ],
+  "why": "Dusk cabin with string lights, deep forest greens, mood without glow.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/cabin-house-FPE8G2EQCN",
+  "creator": "Alex Robert"
+ },
+ {
+  "file": "moody-low-light-barbershop-chair.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "beauty-fitness#Barbershop",
+   "food-hospitality#Bar, cocktail bar and nightlife"
+  ],
+  "why": "Tungsten interior seen through a doorway, deep shadows that still hold detail.",
+  "size": "683x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/barber-window-5EDKE1CZWR",
+  "creator": "Robin Vanden Berghe"
+ },
+ {
+  "file": "moody-low-light-bartender-smoke.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "food-hospitality#Bar, cocktail bar and nightlife"
+  ],
+  "why": "Bartender misting a drink, backlit window and real bar shelves.",
+  "size": "1024x683",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/5917705/image-public-domain-person-glass",
+  "creator": null
+ },
+ {
+  "file": "moody-low-light-city-view-silhouettes.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "professional-b2b#Accounting, finance and wealth management",
+   "professional-b2b#Law firm"
+  ],
+  "why": "Monochrome skyline view with small silhouettes: scale and calm, no faces.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/office-work-HZCASACP3N",
+  "creator": "Charles Forerunner"
+ },
+ {
+  "file": "moody-low-light-latte-dark-wood.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "food-hospitality#Cafe and coffee shop"
+  ],
+  "why": "Single side light on dark wood, crushed blacks kept rich, not muddy.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/coffee-latte-RP0EJV51J6",
+  "creator": "Nolan Issac"
+ },
+ {
+  "file": "moody-low-light-mechanic-under-beetle.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "retail-auto#Auto repair, tyres and detailing",
+   "retail-auto#Car dealership"
+  ],
+  "why": "Mono, ground-level: a mechanic on his back under a classic car in a cluttered home garage.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/beetle-buggy-A0737DFF83",
+  "creator": "Ryan McGuire"
+ },
+ {
+  "file": "moody-low-light-radish-bunch.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "food-hospitality#Grocery, deli, specialty food and farm shop",
+   "retail-auto#Florist"
+  ],
+  "why": "Painterly low-key produce with real leaf texture.",
+  "size": "683x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/garden-vegetables-M4QOSF86BC",
+  "creator": "Foodie Girl"
+ },
+ {
+  "file": "moody-low-light-shop-counter-night.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "retail-auto#Furniture and homeware store",
+   "food-hospitality#Quick-service, food truck and delivery kitchen"
+  ],
+  "why": "Small shop interior with pendant light and fridges, warm practicals.",
+  "size": "960x638",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/store-glass-0C35XWY1EU",
+  "creator": "Jessica Furtney"
+ },
+ {
+  "file": "moody-low-light-speed-bag-mono.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "beauty-fitness#Gym and strength training",
+   "beauty-fitness#Boutique fitness (yoga, pilates, boxing, cycling)"
+  ],
+  "why": "Monochrome speed-bag action; motion and muscle, no gloss.",
+  "size": "1024x668",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/3317845/free-photo-image-boxing-african-american",
+  "creator": "U.S. Department of Defense"
+ },
+ {
+  "file": "moody-low-light-sunflower-still-life.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "retail-auto#Florist",
+   "retail-auto#Furniture and homeware store"
+  ],
+  "why": "Single stem on a cluttered dark table, falloff into shadow.",
+  "size": "960x738",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/book-table-XNTTKRUSF1",
+  "creator": "Vintage RS"
+ },
+ {
+  "file": "moody-low-light-tattoo-station.jpg",
+  "look": "moody-low-light",
+  "industries": [
+   "beauty-fitness#Tattoo studio"
+  ],
+  "why": "Gloved artist at work in the studio, practicals and ink bottles.",
+  "size": "1024x683",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/5970034/tattoo-artist",
+  "creator": null
+ },
+ {
+  "file": "people-candid-barber-clipper-fade.jpg",
+  "look": "people-candid",
+  "industries": [
+   "beauty-fitness#Barbershop",
+   "beauty-fitness#Hair salon"
+  ],
+  "why": "Over-the-shoulder working angle, shallow depth, true skin tones.",
+  "size": "819x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/barber-cutting-O6KYUCUFY4",
+  "creator": "Nick Demou"
+ },
+ {
+  "file": "people-candid-barber-hot-towel-shave.jpg",
+  "look": "people-candid",
+  "industries": [
+   "beauty-fitness#Barbershop",
+   "beauty-fitness#Day spa and massage"
+  ],
+  "why": "Mid-service, nobody looks at the lens, hands busy.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/people-man-NR1P43DL18",
+  "creator": "Christoffer%20Engstr%F6m"
+ },
+ {
+  "file": "people-candid-clinic-consultation.jpg",
+  "look": "people-candid",
+  "industries": [
+   "health-care#GP and medical clinic or hospital",
+   "health-care#Senior care and home care"
+  ],
+  "why": "Consult with an older patient in daylight; real expression, not a smile at the lens.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/doctor-patient-EDI8LWKSBB",
+  "creator": "Direct Media"
+ },
+ {
+  "file": "people-candid-dentist-child-chair.jpg",
+  "look": "people-candid",
+  "industries": [
+   "health-care#Dental clinic and orthodontics"
+  ],
+  "why": "Real treatment moment from the dentist's side, warm natural colour.",
+  "size": "960x636",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/dentist-orthodontist-0XAP6ZHZ9H",
+  "creator": "Michal Jarmoluk"
+ },
+ {
+  "file": "people-candid-heavy-bag-gym.jpg",
+  "look": "people-candid",
+  "industries": [
+   "beauty-fitness#Gym and strength training",
+   "beauty-fitness#Boutique fitness (yoga, pilates, boxing, cycling)"
+  ],
+  "why": "Mid-punch in a raw gym, natural pose, gritty backdrop.",
+  "size": "1024x659",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/8742191/photo-image-public-domain-person",
+  "creator": "U.S. Forest Service (source)"
+ },
+ {
+  "file": "people-candid-laptops-sofa-team.jpg",
+  "look": "people-candid",
+  "industries": [
+   "professional-b2b#SaaS and tech company",
+   "professional-b2b#Coworking and flexible office"
+  ],
+  "why": "Three colleagues on a sofa working on stickered laptops, nobody performing for the lens.",
+  "size": "960x641",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/woman-developers-FVWLQXWZ1P",
+  "creator": "Christina Morillo"
+ },
+ {
+  "file": "people-candid-market-seller-onions.jpg",
+  "look": "people-candid",
+  "industries": [
+   "food-hospitality#Grocery, deli, specialty food and farm shop"
+  ],
+  "why": "Street-market seller at work, strong side light, specific place.",
+  "size": "681x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/people-woman-FYB4VWR56C",
+  "creator": "Paul Morris"
+ },
+ {
+  "file": "people-candid-rehab-agility-ladder.jpg",
+  "look": "people-candid",
+  "industries": [
+   "health-care#Physiotherapy, chiropractic and rehab"
+  ],
+  "why": "Patient with a brace mid-drill on a ladder, low angle, real clinic.",
+  "size": "1024x683",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/6038567/photo-image-public-domain-house-person",
+  "creator": null
+ },
+ {
+  "file": "people-candid-solar-installer-roof.jpg",
+  "look": "people-candid",
+  "industries": [
+   "home-trades#Solar and home energy"
+  ],
+  "why": "Installer mid-lift on a tiled roof, focused, not posing.",
+  "size": "1024x768",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/a-man-in-black-shirt-installing-a-solar-panel-on-the-roof-9875405/",
+  "creator": "kindelmedia"
+ },
+ {
+  "file": "people-candid-wrist-bracelets.jpg",
+  "look": "people-candid",
+  "industries": [
+   "retail-auto#Jewellery and watches",
+   "retail-auto#Fashion and apparel boutique"
+  ],
+  "why": "Stacked bracelets on a relaxed hand, soft window light, face out of frame.",
+  "size": "683x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/hand-pocket-GMXEZCLUPC",
+  "creator": "Christian Mackie"
+ },
+ {
+  "file": "portrait-environmental-boxers-dim-gym.jpg",
+  "look": "portrait-environmental",
+  "industries": [
+   "beauty-fitness#Gym and strength training"
+  ],
+  "why": "Dim gym, sweat and skin texture, eyes off-camera.",
+  "size": "1024x681",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/3373726/free-photo-image-africa-amisom-ist",
+  "creator": "The African Union Mission in Somalia"
+ },
+ {
+  "file": "portrait-environmental-gold-earring-profile.jpg",
+  "look": "portrait-environmental",
+  "industries": [
+   "retail-auto#Jewellery and watches"
+  ],
+  "why": "Profile against a pale wall, long gold earring as the subject, eyes off-camera.",
+  "size": "960x728",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/urban-woman-WSNKQAI78D",
+  "creator": "Candace McDaniel"
+ },
+ {
+  "file": "portrait-environmental-ivy-wall.jpg",
+  "look": "portrait-environmental",
+  "industries": [
+   "professional-b2b#Education, tutoring and schools",
+   "professional-b2b#Nonprofit, faith and community organisation"
+  ],
+  "why": "Quiet portrait in open shade, natural skin, textured backdrop.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/girl-portrait-3DNRJ6YUPD",
+  "creator": "Maxwell Davis"
+ },
+ {
+  "file": "portrait-environmental-site-worker.jpg",
+  "look": "portrait-environmental",
+  "industries": [
+   "home-trades#Construction, renovation and builders",
+   "professional-b2b#Logistics, manufacturing and industrial"
+  ],
+  "why": "Woman on site in hard hat and glasses, working, hard sun.",
+  "size": "768x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://www.rawpixel.com/image/8708605/photo-image-public-domain-woman-person",
+  "creator": null
+ },
+ {
+  "file": "portrait-environmental-solar-installer.jpg",
+  "look": "portrait-environmental",
+  "industries": [
+   "home-trades#Solar and home energy",
+   "home-trades#Construction, renovation and builders"
+  ],
+  "why": "Low-angle worker on the roof edge, sky as negative space.",
+  "size": "768x1024",
+  "source": "Pexels",
+  "license": "Pexels License (free commercial use, no attribution required)",
+  "landing": "https://www.pexels.com/photo/a-low-angle-shot-of-a-man-in-black-shirt-installing-a-solar-panel-on-the-roof-9875406/",
+  "creator": "kindelmedia"
+ },
+ {
+  "file": "product-surface-barber-tools.jpg",
+  "look": "product-surface",
+  "industries": [
+   "beauty-fitness#Barbershop",
+   "beauty-fitness#Tattoo studio"
+  ],
+  "why": "Tools laid on a worn towel, raking light, texture over shine.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/barbershop-brush-GZP9ZEQPFL",
+  "creator": "Nick Demou"
+ },
+ {
+  "file": "product-surface-bike-chain-macro.jpg",
+  "look": "product-surface",
+  "industries": [
+   "retail-auto#Bike, outdoor and sporting goods"
+  ],
+  "why": "Chain links on black, hard side light on machined metal.",
+  "size": "683x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/metal-steel-UC8BMDK54F",
+  "creator": "Thorn Yang"
+ },
+ {
+  "file": "product-surface-classic-headlight-greenery.jpg",
+  "look": "product-surface",
+  "industries": [
+   "retail-auto#Car dealership"
+  ],
+  "why": "Cream classic car's twin headlight, soft out-of-focus greenery behind, daylight.",
+  "size": "960x636",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/car-vintage-QVSPMN4K3S",
+  "creator": "Bady Qb"
+ },
+ {
+  "file": "product-surface-engine-bay-jump-leads.jpg",
+  "look": "product-surface",
+  "industries": [
+   "retail-auto#Auto repair, tyres and detailing"
+  ],
+  "why": "Real engine bay with jump leads clamped on, grime and wear left in.",
+  "size": "960x720",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/jumpercables-battery-T7T37KWY8G",
+  "creator": "Pawel Kadysz"
+ },
+ {
+  "file": "product-surface-folded-shirts-shop.jpg",
+  "look": "product-surface",
+  "industries": [
+   "retail-auto#Fashion and apparel boutique"
+  ],
+  "why": "Product on a shop table with the store soft behind: in situ, not seamless.",
+  "size": "683x1024",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/dressshirts-fashion-TS7R6391UQ",
+  "creator": "Patryk Dziejma"
+ },
+ {
+  "file": "product-surface-gauge-cluster-macro.jpg",
+  "look": "product-surface",
+  "industries": [
+   "retail-auto#Auto repair, tyres and detailing",
+   "retail-auto#Car dealership"
+  ],
+  "why": "Analogue gauges tight, warm faded grade, needles and dust in focus.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/car-dashboard-TFX66XBXTM",
+  "creator": "Martin Vorel"
+ },
+ {
+  "file": "product-surface-pendant-dark-wood.jpg",
+  "look": "product-surface",
+  "industries": [
+   "retail-auto#Jewellery and watches"
+  ],
+  "why": "Silver pendant on scarred dark wood, one soft side light, no studio gloss.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/necklace-chain-B3FWPBJURM",
+  "creator": "Snufkin"
+ },
+ {
+  "file": "product-surface-socket-set-macro.jpg",
+  "look": "product-surface",
+  "industries": [
+   "retail-auto#Auto repair, tyres and detailing",
+   "home-trades#Home services (HVAC, plumbing, electrical)"
+  ],
+  "why": "Chrome sockets in a red tray, shallow focus, worn edges.",
+  "size": "960x640",
+  "source": "Openverse",
+  "license": "CC0 1.0 (public domain)",
+  "landing": "https://stocksnap.io/photo/ratchet-sockets-4RHOB6RC3S",
+  "creator": "One Idea LLC"
+ }
+]
