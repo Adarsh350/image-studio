@@ -1,0 +1,128 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Rendered by scripts/mockup.mjs. Every pixel of content is a real capture; the only text this
+     page draws is the address-bar domain and optional panel labels, both passed in by the caller. -->
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; overflow: hidden; }
+  #stage { position: relative; overflow: hidden; background-size: cover; background-position: center; }
+  .win { position: absolute; overflow: hidden; }
+  .bar { position: absolute; left: 0; top: 0; right: 0; display: flex; align-items: center; }
+  .dot { border-radius: 50%; flex: none; }
+  .url { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex;
+         align-items: center; justify-content: center; white-space: nowrap; overflow: hidden;
+         font-family: -apple-system, "Segoe UI", system-ui, sans-serif; font-weight: 500; }
+  .win img, .phone img, .el img { position: absolute; display: block; object-fit: cover; object-position: top center; }
+  .phone { position: absolute; background: #0f0f10; }
+  .el { position: absolute; overflow: hidden; }
+  .chip { position: absolute; font-family: -apple-system, "Segoe UI", system-ui, sans-serif; font-weight: 600;
+          letter-spacing: .14em; text-transform: uppercase; }
+</style></head>
+<body><div id="stage"></div>
+<script type="application/json" id="params">/*PARAMS*/</script>
+<script>
+(async () => {
+  const P = JSON.parse(document.getElementById('params').textContent);
+  const W = P.w, H = P.h, M = Math.min(W, H), DPR = window.devicePixelRatio || 1;
+  const stage = document.getElementById('stage');
+  Object.assign(stage.style, { width: W + 'px', height: H + 'px', backgroundColor: P.bg });
+  if (P.ground) stage.style.backgroundImage = `url("${P.ground}")`;
+  const dark = P.chrome === 'dark';
+  const C = dark ? { bar: '#252321', dot: '#4a4743', pill: '#34312e', text: '#c9c3ba' }
+                 : { bar: '#ecebe8', dot: '#cfcbc5', pill: '#ffffff', text: '#5a5650' };
+  const shadow = `0 ${M * 0.018}px ${M * 0.06}px rgba(0,0,0,${P.shadow ?? 0.28})`;
+  const load = (src) => new Promise((r) => { const i = new Image(); i.onload = () => r(i); i.onerror = () => r(null); i.src = src; });
+  const imgs = await Promise.all(P.imgs.map(load));
+  if (imgs.some((i) => !i)) { window.__error = 'an image failed to load'; window.__done = true; return; }
+  let upscale = 0;
+  const el = (tag, cls, style, parent = stage) => { const e = document.createElement(tag); if (cls) e.className = cls; Object.assign(e.style, style); parent.append(e); return e; };
+  const px = (n) => n + 'px';
+  const put = (img, parent, x, y, w, h) => {
+    const i = el('img', '', { left: px(x), top: px(y), width: px(w), height: px(h) }, parent);
+    i.src = img.src;
+    // object-fit: cover scales to fill both sides; record how far past native pixels that goes.
+    upscale = Math.max(upscale, (Math.max(w / img.naturalWidth, h / img.naturalHeight)) * DPR);
+  };
+
+  // Browser window: chrome bar + capture, top-aligned, never cropped at the sides.
+  const browserDims = (img, maxW, maxH) => {
+    const ratio = img.naturalHeight / img.naturalWidth, B = 0.036;
+    let w = maxW, t = Math.min(ratio, 1.4, (maxH - w * B) / w);
+    const minT = Math.min(ratio, 0.56);
+    if (t < minT) { t = minT; w = maxH / (t + B); }
+    return { w, h: w * t + w * B, bar: w * B, t };
+  };
+  const browser = (img, x, y, d) => {
+    const win = el('div', 'win', { left: px(x), top: px(y), width: px(d.w), height: px(d.h), borderRadius: px(d.w * 0.012),
+      boxShadow: shadow, background: C.bar });
+    const bar = el('div', 'bar', { height: px(d.bar), padding: `0 ${px(d.bar * 0.45)}`, gap: px(d.bar * 0.22), background: C.bar }, win);
+    for (let k = 0; k < 3; k++) el('div', 'dot', { width: px(d.bar * 0.26), height: px(d.bar * 0.26), background: C.dot }, bar);
+    if (P.url) {
+      const u = el('div', 'url', { height: px(d.bar * 0.6), width: px(d.w * 0.42), borderRadius: px(d.bar * 0.3),
+        background: C.pill, color: C.text, fontSize: px(d.bar * 0.32) }, bar);
+      u.textContent = P.url;
+    }
+    put(img, win, 0, d.bar, d.w, d.w * d.t);
+  };
+
+  // Phone: plain bezel, no notch or island (the capture has no status bar to sit under one).
+  const phoneDims = (img, maxW, maxH) => {
+    const sr = Math.min(img.naturalHeight / img.naturalWidth, 2.17), b = 0.045;
+    const w = Math.min(maxW, maxH / (sr * (1 - 2 * b) + 2 * b));
+    return { w, h: w * (sr * (1 - 2 * b) + 2 * b), b: w * b, sr };
+  };
+  const phone = (img, x, y, d) => {
+    const p = el('div', 'phone', { left: px(x), top: px(y), width: px(d.w), height: px(d.h), borderRadius: px(d.w * 0.15), boxShadow: shadow });
+    const screen = el('div', '', { position: 'absolute', left: px(d.b), top: px(d.b), width: px(d.w - 2 * d.b),
+      height: px(d.h - 2 * d.b), borderRadius: px(d.w * 0.11), overflow: 'hidden', background: '#fff' }, p);
+    put(img, screen, 0, 0, d.w - 2 * d.b, d.h - 2 * d.b);
+  };
+  const chip = (text, x, y, size) => {
+    const c = el('div', 'chip', { left: px(x), top: px(y), fontSize: px(size), color: P.fg }); c.textContent = text;
+  };
+
+  const m = M * (P.margin ?? 0.08), aw = W - 2 * m, ah = H - 2 * m;
+  const [a, b] = imgs;
+  if (P.layout === 'browser') {
+    const d = browserDims(a, aw, ah);
+    browser(a, (W - d.w) / 2, (H - d.h) / 2, d);
+  } else if (P.layout === 'phone') {
+    const d = phoneDims(a, aw, ah);
+    phone(a, (W - d.w) / 2, (H - d.h) / 2, d);
+  } else if (P.layout === 'pair') {
+    // Desktop window top-left, phone overlapping its lower right edge; the group is centred.
+    const bd = browserDims(a, aw * 0.84, ah * 0.86);
+    const py = bd.h * (W / H >= 1.2 ? 0.22 : 0.4); // landscape: start the phone higher so it can be taller
+    const pd = phoneDims(b, aw * 0.3, ah - py);
+    const px0 = bd.w - pd.w * 0.55;
+    const gw = Math.max(bd.w, px0 + pd.w), gh = Math.max(bd.h, py + pd.h);
+    const ox = (W - gw) / 2, oy = (H - gh) / 2;
+    browser(a, ox, oy, bd);
+    phone(b, ox + px0, oy + py, pd);
+  } else if (P.layout === 'split') {
+    // Before and after, side by side on a landscape slot, stacked otherwise.
+    const side = W / H >= 1.2, gap = M * 0.05, lab = P.labels ? M * 0.06 : 0, fs = M * 0.026;
+    const bw = side ? (aw - gap) / 2 : aw, bh = (side ? ah : (ah - gap) / 2) - lab;
+    const d = [a, b].map((img) => browserDims(img, bw, bh)).reduce((p, q) => (p.w * p.h < q.w * q.h ? p : q));
+    [a, b].forEach((img, k) => {
+      const cx = side ? m + k * (bw + gap) + (bw - d.w) / 2 : (W - d.w) / 2;
+      const groupH = side ? d.h + lab : 2 * (d.h + lab) + gap;
+      const top = (H - groupH) / 2 + (side ? 0 : k * (d.h + lab + gap));
+      if (P.labels) chip(P.labels[k], cx, top, fs);
+      browser(img, cx, top + lab, d);
+    });
+  } else if (P.layout === 'element') {
+    // A real UI element on the brand ground: rounded, lifted, never cropped.
+    const s = Math.min(aw / a.naturalWidth, ah / a.naturalHeight);
+    const w = a.naturalWidth * s, h = a.naturalHeight * s;
+    const box = el('div', 'el', { left: px((W - w) / 2), top: px((H - h) / 2), width: px(w), height: px(h),
+      borderRadius: px(M * 0.018), boxShadow: shadow });
+    put(a, box, 0, 0, w, h);
+  } else {
+    window.__error = 'unknown layout ' + P.layout;
+  }
+  await Promise.all([...document.images].map((i) => i.decode().catch(() => {})));
+  window.__upscale = upscale;
+  window.__done = true;
+})();
+</script></body></html>
