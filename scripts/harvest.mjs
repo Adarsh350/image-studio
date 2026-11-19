@@ -8,6 +8,8 @@
 //
 // Writes <out-dir>/site.json, <out-dir>/home.png and <out-dir>/images/NNN.<ext>.
 // site.json.images[]: { file, url, width, height, alt, page, role: photo|logo|graphic, bytes }.
+// site.json.pages[]: also outbound (client sites, case studies) and ui (elements that look like product
+// UI or work samples: { selector, w, h, hint, text }) for capture.mjs.
 // Images whose short side is under --min px (default 400) are dropped, except logos.
 import { createRequire } from 'node:module';
 import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
@@ -103,8 +105,37 @@ function collect() {
     .map((a) => { try { return new URL(a.getAttribute('href'), location.href); } catch { return null; } })
     .filter((u) => u && u.origin === location.origin && !/\.(pdf|zip|jpe?g|png|webp)$/i.test(u.pathname))
     .map((u) => u.origin + u.pathname);
+  // Proof a showcase slot can use: links to client sites and case studies, and on-page elements that
+  // look like product UI or work samples (capture.mjs screenshots them by selector).
+  const SOCIAL = /(^|\.)(linkedin|instagram|facebook|twitter|x|tiktok|youtube|pinterest|wa|whatsapp|t|threads|google|apple|calendly)\.(com|me|co)$/i;
+  const outbound = [...new Map([...document.querySelectorAll('a[href]')].map((a) => {
+    let u; try { u = new URL(a.getAttribute('href'), location.href); } catch { return null; }
+    if (!/^https?:$/.test(u.protocol) || u.origin === location.origin || SOCIAL.test(u.hostname)) return null;
+    return [u.origin + u.pathname, (a.innerText || a.getAttribute('aria-label') || '').replace(/\s+/g, ' ').trim().slice(0, 80)];
+  }).filter(Boolean)).entries()].map(([href, text]) => ({ url: href, text })).slice(0, 40);
+  const cssPath = (el) => {
+    const parts = [];
+    for (let e = el; e && e !== document.body; e = e.parentElement) {
+      if (e.id) { parts.unshift('#' + CSS.escape(e.id)); return parts.join(' > '); }
+      const same = [...e.parentElement.children].filter((s) => s.tagName === e.tagName);
+      parts.unshift(e.tagName.toLowerCase() + (same.length > 1 ? `:nth-of-type(${same.indexOf(e) + 1})` : ''));
+    }
+    return ['body', ...parts].join(' > ');
+  };
+  const UI_HINT = /mock|demo|preview|dashboard|chat|answer|screen|device|browser|widget|showcase|case|portfolio|work|project|result|report|score|audit|app/i;
+  const ui = [];
+  for (const el of document.querySelectorAll('main *, section *, body > div *')) {
+    const hint = `${el.getAttribute('class') || ''} ${el.id} ${el.getAttribute('aria-label') || ''}`;
+    if (!UI_HINT.test(hint) || el.closest('header, nav, footer')) continue;
+    const r = el.getBoundingClientRect();
+    if (r.width < 280 || r.height < 180 || r.height > 1800) continue;
+    if (ui.some((u) => u.el.contains(el))) continue; // keep the outermost match
+    ui.push({ el, selector: cssPath(el), w: Math.round(r.width), h: Math.round(r.height),
+      hint: hint.trim().slice(0, 80), text: (el.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 120) });
+    if (ui.length >= 15) break;
+  }
   return {
-    found, colors, links,
+    found, colors, links, outbound, ui: ui.map(({ el, ...u }) => u),
     title: document.title,
     description: document.querySelector('meta[name="description"]')?.content || '',
     lang: document.documentElement.lang || '',
@@ -200,6 +231,8 @@ async function selfTest() {
       <header><img src="/logo.svg" alt="Test Co logo" width="120" height="40"><a href="/about">About</a></header>
       <h1>Hello</h1><div style="width:800px;height:400px;background-image:url('/hero.svg')">bg</div>
       <img srcset="/hero.svg 1600w" width="800" alt="hero"><img src="/icon.svg" width="32" alt="icon">
+      <main><div class="demo-preview" style="width:600px;height:300px">Live demo</div></main>
+      <a href="https://client-site.example/">Client site</a><a href="https://www.linkedin.com/company/x">in</a>
       <p>Body copy</p></body></html>`],
     '/about': ['text/html', `<html><body style="background:#f4efe6"><h1>About us</h1></body></html>`],
     '/hero.svg': ['image/svg+xml', box(1600, 1000, '#2a6f4e')],
@@ -220,7 +253,10 @@ async function selfTest() {
     server.close();
   }
   const urls = site.images.map((i) => i.url.replace(base, ''));
-  const ok = site.pages.length === 2 && site.pages[0].title === 'Test Co' && site.palette.includes('#f4efe6')
+  const home = site.pages[0];
+  const ok = home.outbound?.length === 1 && home.outbound[0].text === 'Client site' && home.ui?.length === 1
+    && home.ui[0].hint.includes('demo-preview')
+    && site.pages.length === 2 && site.pages[0].title === 'Test Co' && site.palette.includes('#f4efe6')
     && urls.includes('/hero.svg') && urls.includes('/logo.svg') && urls.length === 3 /* svg icon kept as logo-ish */
     && existsSync(join(dir, 'home.png')) && existsSync(join(dir, site.images[0].file));
   console.log(ok ? `self-test OK (${site.pages.length} pages, ${urls.length} images, palette ${site.palette.slice(0, 3).join(' ')})`
