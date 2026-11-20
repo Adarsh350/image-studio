@@ -1,7 +1,7 @@
 ---
 name: image-studio
-description: Turn a business website link into a ready-to-use set of marketing images. Reads the site, harvests its best existing photos, fixes the near-misses with Codex edits, generates whatever is missing with Codex (free, ChatGPT quota), rejects anything that looks like AI slop, and crops each image to the size it will be used at. Delivers exactly N images into a new folder in Downloads. Use for "/image-studio", "images for this site", "marketing images for <link>", "give me N images for this business", "social images from my website", "find the best images on this site", "make images for this brand", "edit these images for Instagram", or any request for a set of brand or marketing images (not video: that is creator-studio).
-argument-hint: "<url> [count] [--use social|web|ads|mixed] [--existing-only]"
+description: Turn a business website link into a ready-to-use set of marketing images that show what the business actually sells. Reads the site, captures real proof of the work (client sites, product UI, demo elements) and frames it in browser and phone mockups, harvests its best existing photos, fixes the near-misses with Codex edits, generates whatever is missing with Codex (free, ChatGPT quota), rejects anything that looks like AI slop or could be any business, and crops each image to the size it will be used at. Delivers exactly N images into a new folder in Downloads. Use for "/image-studio", "images for this site", "marketing images for <link>", "give me N images for this business", "social images from my website", "find the best images on this site", "make images for this brand", "edit these images for Instagram", or any request for a set of brand or marketing images (not video: that is creator-studio).
+argument-hint: "<url> [count] [--use social|web|ads|mixed] [--proof <folder>] [--existing-only]"
 ---
 
 # Image Studio
@@ -23,6 +23,8 @@ Read these before writing the brief. The quality of the set is decided there.
 
 **The bar:** every delivered image can go straight into a paid ad or onto a client's Instagram
 today. If it would look cheap next to the photos in `references/anchors/`, it isn't delivered.
+And the set sells: at least 60% of it shows the business's real work or product, so a stranger
+scrolling past could say what the business does (craft.md section 2).
 
 ## 1. Intake
 
@@ -33,6 +35,13 @@ don't ask. Otherwise ask once with AskUserQuestion, only for what is missing:
 |---|---|
 | How many images? | 6 · 10 · 20 (Other for any number) |
 | What are they for? | Mixed social + web (Recommended) · Social posts · Website · Ads |
+
+`--proof <folder>` (or screenshots the user attaches or points to): real screenshots of the work,
+such as a product dashboard, a client site, a report. Read every file in it. Rank them by how
+clearly each shows one offer, how sharp and large it is, and whether it holds personal data
+(skip those unless the owner cleared them). Then use the best one or two per offer as `proof`
+slots (craft.md section 2). Copy any proof file the set uses into `$W/proof/`. Never generate a
+stand-in for proof the user said they will supply: leave the slot open and say so.
 
 Defaults when the user says "just do it": 10 images, mixed. Whose brand: a client site gets no
 Iyara context; Iyara's own site loads `iyara-labs` for the brief. If the count is over 20, say it
@@ -66,9 +75,26 @@ Writes `site.json` (pages, headings, nav, meta, fonts, palette, every image with
 
 - Read `home.png` and the 6-10 largest `photo` images (contact sheet first:
   `python -I <skill-dir>/scripts/finish.py sheet "$W/site/sheet.jpg" <files>`).
-- Write `$W/brief.md` per craft.md section 1.
+- Write `$W/brief.md` per craft.md section 1, including **Offers and proof**.
 - Sites behind bot protection or empty shells: say so, retry once with `--pages 1`, else ask for
   screenshots or a folder of images and continue from the brief.
+
+**Capture the proof.** For each offer in the brief, screenshot the real thing:
+the client sites it links to (`site.json` `pages[].outbound`, plus the work or case-study pages),
+and the UI or demo elements on its own pages (`pages[].ui`: a selector and a hint). View
+`home.png` first and pick only what is plainly the work, not navigation or a footer.
+
+```bash
+node <skill-dir>/scripts/capture.mjs --batch "$W/capture.json"
+# capture.json: [{"url": "https://client-site.com", "out": "<W>/cap/client-desktop.png"},
+#                {"url": "https://client-site.com", "out": "<W>/cap/client-mobile.png", "device": "mobile"},
+#                {"url": "https://client-site.com", "out": "<W>/cap/client-full.png", "full": true},
+#                {"url": "<url>", "out": "<W>/cap/demo.png", "selector": "<pages[].ui selector>"}]
+```
+
+desktop is 1440x900 at 2x and mobile 390x844 at 3x; cookie banners and chat widgets are hidden.
+Read every capture: a half-loaded page, a surviving banner or placeholder copy is recaptured
+(raise `--wait`) or dropped.
 
 ## 3. Shot list
 
@@ -76,8 +102,10 @@ Find the business in `references/industries/INDEX.md` and read its section (INDE
 use each part and what to do when nothing fits). Its House style goes into the brief and every
 prompt; its Never list joins the reject gate; its Real only shots are never `generate`.
 
-Write `$W/shots.md` per craft.md section 2, seeding concepts from the industry section's Shot
-concepts and playbook.md section 3: N rows of `#, use, size, concept, source, ref`.
+Write `$W/shots.md` per craft.md section 2: N rows of `#, use, size, shows, concept, source, ref`.
+Assign showcase slots first (at least 60% of N, every offer once when N allows), from the proof,
+the section's Showcase concepts and playbook.md section 3. Then fill mood slots (at most 40%) from
+the Shot concepts.
 Post it in chat as a compact table and **carry on without waiting** (the user asked for a link-in,
 files-out flow). `--existing-only` means no `generate` rows: if the site lacks N good photos,
 deliver fewer and say how many it had.
@@ -95,7 +123,25 @@ detail. Each crop is its own `existing` row with its own `--focus`. Logos are ne
 
 ## 4. Make
 
-- **Existing:** straight to finishing.
+- **Proof, capture, existing:** straight to finishing (or into a mockup).
+- **Mockup:** frame captures on the brand ground at the slot's delivery size, all in one batch:
+
+```bash
+node <skill-dir>/scripts/mockup.mjs --batch "$W/mockup.json"
+# mockup.json: [{"layout": "pair", "out": "<W>/raw/02.png", "size": "1080x1350",
+#                "imgs": ["<W>/cap/client-desktop.png", "<W>/cap/client-mobile.png"],
+#                "bg": "<brand ground hex>", "url": "client-site.com"},
+#               {"layout": "split", "out": "<W>/raw/05.png", "size": "1920x1080",
+#                "imgs": ["<W>/cap/before.png", "<W>/cap/after.png"], "labels": ["Before", "After"]}]
+```
+
+  Layouts: `browser` (1 desktop capture), `phone` (1 mobile), `pair` (desktop + mobile), `split`
+  (before + after), `element` (1 UI element). Options: `bg`, `fg` (label colour), `ground` (a
+  texture image), `chrome` light|dark, `url` (the real domain, the only text drawn besides the
+  labels), `margin`. Output is 2x the size, for `finish.py fit` to bring down. A `WARN` (capture
+  upscaled past 1.5x) means a bigger capture or a different layout.
+- **Screen:** generate the device scene with a flat green screen (craft.md "Screen scenes"), then
+  `python -I <skill-dir>/scripts/finish.py screen <scene> <capture> "$W/raw/NN.png"`.
 - **Edit and generate:** write prompts per craft.md section 3 into `$W/jobs.json` and run all of
   them in one batch:
 
@@ -147,8 +193,9 @@ script warns above a 1.5x upscale: then pick another source or regenerate, don't
 
 - **Deliver:** copy `final/` to `~/Downloads/<slug>-images-<YYYY-MM-DD>/` (add `-2`, `-3` if it
   exists). Exactly N images, named `NN-<use>-<concept>.jpg`. Nothing else in that folder.
-- **Chat reply:** the folder path; a table of `file, size, source (site page URL / Codex edit /
-  Codex generated)`; anything the user should check (an edited real photo, a slot that fell back);
+- **Chat reply:** the folder path; a table of `file, size, shows, source (site page URL / capture
+  of <url> / supplied proof / Codex edit / Codex generated)`; any offer that had no proof, as a
+  request for screenshots; anything the user should check (an edited real photo, a slot that fell back);
   the real-only and GBP shots the site lacked, as a short list for the owner to take; and the work
   dir for re-rolls.
 - **Rights:** images harvested from a site may be licensed stock that is cleared for that website
@@ -159,10 +206,15 @@ script warns above a 1.5x upscale: then pick another source or regenerate, don't
 
 ## Hard rules
 
-- Never generate the client's logo, product as sold, team, premises, certificates or screenshots.
-  Those come from the site or from the user.
+- Never generate the client's logo, product as sold, team, premises, certificates, screenshots,
+  product UI, dashboards, client work, AI answers or metrics. Those come from the site (captured),
+  or from the user.
+- At least 60% of the set is showcase, and every showcase slot passes the stranger test.
 - Google Business Profile slots are real photos only.
-- Never put text, lettering or logos in a generated image.
+- Never put text, lettering or logos in a generated image. Real pixels (captures, supplied
+  screenshots, the site's own copy) may carry their own text.
+- Never alter what a capture or supplied screenshot shows: crop, frame and composite it, never
+  edit its numbers or copy.
 - Never ship an image that failed the gate to make up the count. Deliver fewer and say why.
 - Paid tools need a flag first: the Higgsfield MCP, any image API other than Codex, any paid
   upscaler.
@@ -176,6 +228,8 @@ script warns above a 1.5x upscale: then pick another source or regenerate, don't
 
 ## Self-tests
 
-`node scripts/harvest.mjs --self-test` · `python -I scripts/finish.py --self-test` ·
+`node scripts/harvest.mjs --self-test` · `node scripts/capture.mjs --self-test` ·
+`node scripts/mockup.mjs --self-test` · `python -I scripts/finish.py --self-test` (fit, sheet,
+zoom and screen) ·
 `python -I scripts/qa.py --self-test` · `python -I scripts/codex_image.py --check` (lint and prompt tests
 plus the Codex version; no quota used). All at once: `npm run check`.
