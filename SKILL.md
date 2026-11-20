@@ -96,6 +96,12 @@ desktop is 1440x900 at 2x and mobile 390x844 at 3x; cookie banners and chat widg
 Read every capture: a half-loaded page, a surviving banner or placeholder copy is recaptured
 (raise `--wait`) or dropped.
 
+Work shown only as lazy-loaded demo videos (a case-studies page with no outbound links) is still
+proof: scroll the page so the `<video>` sources load, download them, and pull frames with
+`ffmpeg -ss <t> -i v.mp4 -frames:v 1 f.png`. Screen recordings almost always carry the mouse
+pointer. Pick the frame where it sits over flat colour and paint it out with that colour
+(cleanup, not an edit). If it covers copy or numbers, use another frame.
+
 ## 3. Shot list
 
 Find the business in `references/industries/INDEX.md` and read its section (INDEX.md says how to
