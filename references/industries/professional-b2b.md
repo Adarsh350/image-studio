@@ -47,6 +47,14 @@ Also covers: solicitors, barristers, notaries, immigration and visa consultants,
 - Hands passing a signed document across a desk (close crop, no faces).
 - Office building at dusk with a single lit floor.
 
+**Showcase concepts** (real proof only: craft.md section 2)
+- The firm's website and client portal in a browser frame (`mockup browser`), or desktop and phone together (`pair`).
+- A guide, briefing or insight the firm really published, captured from its site.
+- Its booking or enquiry flow on a phone (`mockup phone`).
+- A ranking or award the site shows, captured as it appears there (never redrawn).
+- A generated desk scene with the firm's real site composited on the laptop screen (`screen`).
+- Client matters are confidential: never mock up a case file, a court document or a client name.
+
 **Real only**
 - Named lawyers and partners (headshots, team pages).
 - The firm's actual offices, reception and meeting rooms.
@@ -98,6 +106,13 @@ Also covers: bookkeepers, tax advisers, auditors, independent financial advisers
 - Pair reviewing a mortgage offer on a sofa, papers on knees.
 - Adviser walking into the office at 8 am with coffee, street behind.
 - Family office desk by a window: pen, leather folder, one plant.
+
+**Showcase concepts** (real proof only: craft.md section 2)
+- The client portal, app or dashboard the firm gives clients, captured or supplied (`mockup browser` or `element`).
+- A tool on its own site (a tax or fee calculator, a checklist) captured as an element.
+- A report pack or monthly summary it produces, supplied by the owner and anonymised.
+- A metric quoted word for word from the site, with clean ground left for it to be set as type.
+- A generated home-office or shop-counter scene with the real portal composited on the screen (`screen`).
 
 **Real only**
 - Advisers, partners and staff.
@@ -152,6 +167,13 @@ Also covers: management and strategy consultants, HR and recruitment firms, PR, 
 - Laptop review at a shared table, two faces lit by daylight.
 - Handwritten whiteboard with blurred person erasing.
 
+**Showcase concepts** (real proof only: craft.md section 2)
+- A case study or published report page in a browser frame (`mockup browser`, `--full` for portrait).
+- A framework, diagram or chart from the firm's own site, captured as an element.
+- A deliverable the owner supplies (a deck page, a dashboard), anonymised.
+- A metric from a case study, quoted word for word, with clean ground for type.
+- A generated meeting-room scene with the real report composited on a laptop or screen (`screen`).
+
 **Real only**
 - The firm's actual consultants and leadership.
 - Client sites and staff; any real project output or data.
@@ -182,11 +204,11 @@ Also covers: B2B software, apps, dev tools, AI startups, IT and managed-services
 
 **House style**
 - Light: daylight from large windows; practical lamps at night for a lived-in feel.
-- Lens and distance: 35 mm over-the-shoulder, 50 to 85 mm for faces; screens deliberately soft or turned away.
+- Lens and distance: 35 mm over-the-shoulder, 50 to 85 mm for faces; in mood slots, screens deliberately soft or turned away (showcase slots show the real UI, captured).
 - Colour and grade: clean, mid-key, slightly warm; no neon "tech blue".
 - People: real users and builders, doing the job, looking at the work or each other.
 - Props, materials, setting: sticker-covered laptops, notebooks, cables, real desks; the product shown on a phone in a hand, not a floating mockup.
-- Framing: shallow depth of field, screens never centre stage.
+- Framing: shallow depth of field; in mood slots, screens never centre stage.
 
 **Never**
 - Floating UI mockups over a glowing laptop at a "perfect" desk.
@@ -205,9 +227,17 @@ Also covers: B2B software, apps, dev tools, AI startups, IT and managed-services
 - Commute shot: phone in hand on a tram, product on screen soft.
 - Office window at dusk with one team still working.
 
+**Showcase concepts** (real proof only: craft.md section 2)
+- The product's main screen in a browser frame (`mockup browser`), captured or supplied.
+- Desktop app and mobile app together (`mockup pair`).
+- One feature, close: a chart, a card, a chat answer, captured with `--selector` (`mockup element`).
+- The mobile app in a phone, for stories (`mockup phone`).
+- A customer's counter or desk, generated, with the real UI composited on the phone or laptop screen (`screen`).
+- Before and after: the old workflow (a spreadsheet the owner supplies) next to the product (`mockup split`).
+
 **Real only**
 - The real team and customers.
-- The actual product UI and any metrics.
+- The actual product UI and any metrics (capture them or ask the owner; never generate).
 - The company's real office or store.
 
 **Reference photos** (free licence; open and judge before use)
@@ -258,6 +288,13 @@ Also covers: branding studios, ad agencies, web and app design shops, architectu
 - Studio kitchen: team lunch with leftover work on the table.
 - Printer-room shot: wet proofs hung to dry.
 - Late-night laptop render glowing on a face.
+
+**Showcase concepts** (real proof only: craft.md section 2)
+- A client site the agency built, in a browser frame or desktop and phone together (`mockup browser` / `pair`).
+- Before and after of a redesign, from the Wayback Machine or the agency's own case study (`mockup split`).
+- A case-study page or portfolio grid captured from the agency's site.
+- Campaign creative it made, supplied by the owner (real pixels, so the creative's own text is fine).
+- A generated studio desk with a real client site composited on the laptop screen (`screen`).
 
 **Real only**
 - The studio team and founders.

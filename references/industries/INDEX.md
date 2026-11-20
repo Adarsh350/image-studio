@@ -10,6 +10,12 @@ business below: the bold name is the section, then the businesses it also covers
   generate prompt. Where the site's own good photos disagree with it, the site wins: the set must
   sit beside them without a seam.
 - **Never:** add to the reject gate for this run (craft.md section 4, Brand misses).
+- **What the work looks like:** before using the concepts, decide what this business's work looks
+  like as an image: the dish, the finished room, the client website, the dashboard. That is the
+  showcase (craft.md section 2, at least 60% of the set). Where the work is physical, many Shot
+  concepts already show it. Where it lives on a screen (software, agencies, consulting, finance,
+  any online service), the concepts are mood only and the showcase comes from proof: captures,
+  mockups and supplied screenshots. Sections that have them list **Showcase concepts**.
 - **Shot concepts:** seed the shot list. Rewrite each one for this business's place and customers.
 - **Real only:** these slots are never `generate`. With no harvested photo they become another
   concept, and the reply lists them as shots the owner should take.

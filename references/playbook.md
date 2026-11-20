@@ -182,6 +182,15 @@ Concepts:
 
 **Real only:** partners and staff, the office, client logos, screenshots.
 
+These concepts are **mood** slots. A professional-services set is mostly **showcase** (craft.md
+section 2), and the showcase comes from proof, not from Codex:
+- a client website the firm built, in a browser frame, or desktop and phone together (`mockup pair`)
+- before and after of a site it rebuilt, from the Wayback Machine or supplied (`mockup split`)
+- a dashboard, report or product UI it ships, captured or supplied (`mockup element` or `browser`)
+- a demo element from its own site (a chat widget, a calculator, a score) on the brand ground
+- a metric from the site, word for word, with clean ground left so it can be set as type later
+- a generated laptop or phone scene with the real capture composited on its screen (`screen`)
+
 > Editorial photograph, 50mm lens at f/2.8. Two colleagues' hands rest on printed pages spread across a walnut meeting table, one holding a pen to a margin note, a ceramic coffee cup and closed laptop beside them. A quiet meeting room with a linen curtain and a potted fig. Soft overcast daylight from a window on the left. Overhead three-quarter angle, papers in the lower half, clean table surface in the upper right. Muted warm neutrals, true-to-life colour.
 
 ### Hotel / hospitality / short-stay
@@ -264,16 +273,20 @@ Concepts:
 ## 4. The default set ("N images for marketing")
 
 When the user gives a count and no use, build the set from this mix. Scale it to N, rounding so it
-sums exactly.
+sums exactly. The table sets **sizes**; craft.md section 2 sets **content**: whatever the sizes,
+at least 60% of the rows are showcase slots, and every offer in the brief gets one when N allows.
+Assign the showcase slots first, each to the size its proof fits best (a desktop capture suits a
+landscape or a feed `pair`, a mobile capture a story, a UI element a square), then fill the rest
+with mood slots.
 
 | Share | Slot | Size | Preferred source |
 |---|---|---|---|
-| 30% | Feed posts: a mix of people-at-work, detail and place | 1080x1350 | existing, else generate |
-| 10% | Carousel trio from one shoot (wide, medium, detail) | 1080x1350 | multi-crop of one big site photo, else generate |
-| 15% | Square: product or craft detail | 1080x1080 | existing, else generate |
-| 15% | Story / Reel covers with negative space up top | 1080x1920 | existing crop, else generate |
-| 15% | Web/social landscape with headline space | 1920x1080 | existing, else generate |
-| 5% | OG / ad landscape | 1200x630 | existing |
+| 30% | Feed posts: the work itself, or people-at-work, detail and place | 1080x1350 | proof / capture / mockup, else existing, else generate |
+| 10% | Carousel trio from one shoot or one project (wide, medium, detail) | 1080x1350 | one project's captures, or multi-crop of one big site photo, else generate |
+| 15% | Square: product, craft or UI detail | 1080x1080 | mockup element / existing, else generate |
+| 15% | Story / Reel covers with negative space up top | 1080x1920 | mockup phone / existing crop, else generate |
+| 15% | Web/social landscape with headline space | 1920x1080 | mockup browser or pair / screen / existing, else generate |
+| 5% | OG / ad landscape | 1200x630 | mockup / existing |
 | 10% | GBP: cover plus exterior/interior/at-work | 1920x1080 / 1080x1080 | **existing only**; if none, swap to a feed slot and list the GBP shots under "shoot these yourself" |
 
 A worked example for N=20:
